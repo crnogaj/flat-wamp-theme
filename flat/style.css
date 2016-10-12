@@ -1,0 +1,187 @@
+/* Flat style for WampServer */
+
+@import url('http://fonts.googleapis.com/css?family=Raleway:400');
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	background: #fff;
+}
+
+body {
+	margin: 0 10%;
+	font: 80%/1.4 "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	border: 1px solid #eee;
+	background: rgb(250, 250, 250);
+	position: relative;
+}
+
+select{
+	height: 2em;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    padding: .2em .4em;
+    display: inline-block;
+    box-shadow: inset 0 1px 3px #ddd;
+    border-radius: 4px;
+    vertical-align: middle;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.innerhead {
+	border-bottom: 1px solid #eee;
+	letter-spacing: -500em; 
+	text-indent: -500em; 
+	height: 80px;
+	background-image: url(img/logo.png);
+	background-repeat: no-repeat;
+	background-size: 275px;
+    background-position: 3em center;
+	padding: 2em 3em 0em;
+}
+
+.utility {
+	position: absolute;
+	right: 4em;
+	top: 20px;
+	font-size: 0.85em;
+}
+
+.utility li {
+	display: inline;
+}
+
+h2 {
+	margin: 0.8em 0 0.5em 0;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#head ul li, dl ul li, #foot li {
+	list-style: none;
+	display: inline;
+	margin: 0;
+	padding: 0 0.4em;
+}
+
+ul.aliases, ul.projects, ul.tools, ul.vhost {
+	list-style: none;
+	line-height: 24px;
+}
+
+ul.aliases a, ul.projects a, ul.tools a, ul.vhost a {
+	padding-left: 22px;
+	background: url(img/folder.png) 0 100% no-repeat;
+}
+ul.aliases a:hover, ul.projects a:hover, ul.tools a:hover, ul.vhost a:hover {
+	background: url(img/folder-full.png) 0 100% no-repeat;
+}
+
+ul.tools a {
+	background: url(img/tools.png) 0 100% no-repeat;
+}
+ul.tools a:hover {
+	background: url(img/tools-blue.png) 0 100% no-repeat;
+}
+
+ul.aliases a, ul.vhost a {
+	background: url(img/arrow.png) 0 100% no-repeat;
+}
+ul.aliases a:hover, ul.vhost a:hover {
+	background: url(img/arrow-full.png) 0 100% no-repeat;
+}
+
+dl {
+	margin: 0;
+	padding: 0;
+}
+
+dt {
+	font-weight: bold;
+	text-align: right;
+	width: 11em;
+	clear: both;
+}
+
+dd {
+	margin: -1.35em 0 0 12em;
+	padding-bottom: 0.4em;
+	overflow: auto;
+}
+dd ul li {
+	float: left;
+	display: block;
+	width: 16.5%;
+	min-width: 140px;
+	margin: 0;
+	padding: 0 0 0 20px;
+	background: url(img/php.png) 0px 50% no-repeat;
+	line-height: 1.6;
+}
+
+.divider1 {
+    margin-top:5px;
+    border-top:1px solid #eee;
+}
+
+.divider2 {
+    clear:both;
+}
+
+a {
+	color: #024378;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #04569A;
+	text-decoration: underline;
+}
+
+#foot, #error {
+	text-align: center;
+	margin-top: 1.8em;
+	border-top: 1px solid #eee;
+	padding: 1em 0;
+	font-size: 0.85em;
+}
+
+.column {
+    min-width: 220px;
+    float:left;
+}
+
+.three-columns .column {
+    width: 32%;
+}
+.four-columns .column {
+    width: 23%;
+}
+.config,.alltools.four-columns {
+    padding: 1em 3em;
+}
+
+@media screen and (max-width: 750px) {
+
+    dt {
+    	text-align: left;
+    	width: 100%;
+    	clear: left;
+        margin: 2% 0 0 0;
+    }
+
+    dd {
+    	margin: 0;
+    	padding: 0.5% 1.5% 1% 1.5%;
+    }
+}
