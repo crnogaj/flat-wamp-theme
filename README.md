@@ -5,5 +5,4 @@ Simple flat theme for WampServer 3 based on default 'Classic' theme.
 Set theme in `wampthemes` folder (e.g. C:\wamp\www\wampthemes\) and select it on WampServer start page.
 
 ###Compatibility
-Works on WampServer 3<br/>
-It is not tested on previous WampServer versions
+Tested on WampServer version 3.0.0
